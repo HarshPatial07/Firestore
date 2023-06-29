@@ -1,0 +1,29 @@
+.facebook-container{
+    margin: 50px 500px;
+    padding: 50px 50px;
+    height: 500px;
+    width: 550px;
+    background-color: #CECECE;
+  }
+  .user-email{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    
+  }
+  .btn-logout{
+    height: 47px;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #4169E1;
+  }
+  .btn-login{
+    height: 47px;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #266b26;
+  }
