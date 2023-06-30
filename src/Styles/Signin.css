@@ -1,0 +1,40 @@
+.facebook-container{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
+  }
+  .firebase-auth{
+    display: flex;
+    flex-direction: column;
+    border: 20px;
+    border-radius: 15px;
+    background-color: #FEFCFF;
+    width: 500px;    
+    height: 300px;
+    margin-top: 20px;
+  }
+  .user-email{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    
+  }
+  .btn-logout{
+    height: 47px;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #4169E1;
+  }
+  .btn-login{
+    height: 47px;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #266b26;
+  }

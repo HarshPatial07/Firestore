@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { UserAuth } from "./AuthContext";
-import "./Signin.css"
+import "../Styles/Signin.css"
+import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const { user, facebookSignIn, logOut } = UserAuth();
-  const handleFacebookSignin = async () => {
+  const navigate = useNavigate();
+  const handleFacebookSignin = async (e) => {
+    e.preventDefault();
     try {
       await facebookSignIn();
+      navigate("/")
     } catch (error) {
       console.log(error);
     }
   };
+
   const renderButton = () => {
     if (user) {
       return (
@@ -33,12 +38,15 @@ const Signin = () => {
   };
   return (
     <div className="facebook-container">
+      <div className="firebase-auth">
       <h2 className="text">Firebase Auth</h2>
       <div>
-        <p className="user-email">Welcome: {user && user.email}</p>
+        <p className="user-email"><u>Welcome: {user && user.email}</u></p>
       </div>
+      
       <div className="text_btn">       
         {renderButton()}
+      </div>
       </div>
     </div>
   );
